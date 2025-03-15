@@ -15,18 +15,32 @@ body {
 
 .hlavicka {
   background-color: #2ecc71;
-}
-.hlavni {
-  background-color: #f1c40f;
-}
-.levy {
-  background-color: #3498db;
-}
-.pravy {
-  background-color: #e74c3c;
-}
-.paticka {
-  background-color: #9b59b6;
+  display: flex;
 }
 
-/* ---------------------------------------------------- */
+.kontejner {
+  display: flex;
+}
+
+.hlavni {
+  background-color: #f1c40f;
+  order: 2;
+  flex-basis: 55%;
+}
+
+.levy {
+  background-color: #3498db;
+  order: 1;
+  flex-basis: 25%;
+}
+
+.pravy {
+  background-color: #e74c3c;
+  order: 3;
+  flex-basis: 20%;
+}
+
+.paticka {
+  background-color: #9b59b6;
+  display: flex;
+}
