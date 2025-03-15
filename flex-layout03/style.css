@@ -5,7 +5,6 @@ body {
 	font-family: sans-serif;
 }
 
-
 .blok {
     padding: 20px;
 }
@@ -17,3 +16,23 @@ body {
 
 /* ---------------------------------------------------- */
 
+.kontejner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.horni {
+    width: 100%;
+}
+
+.prvni, .druhy, .treti {
+    flex-basis: calc(100%/3)
+}
+
+.blok {
+    flex-shrink: 1;
+}
+
+/* .blok:not(:nth-child(1)) {
+    flex: 1
+} */
